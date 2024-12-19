@@ -5,6 +5,9 @@ from ma_rue import rue, affiche
 
 # Fonction rectangle()
 def rectangle(x,y,w,h,c):
+    x = x - w/2
+    y = y - h
+
 
     '''
     Dessine un rectangle avec un contour noir et rempli de la couleur passée en paramètre
@@ -14,12 +17,14 @@ def rectangle(x,y,w,h,c):
         h : hauteur du rectangle
         c : couleur du remplissage
     '''
-    rue.fill_rect(x, y, w, h)
     rue.fill_style = c 
+    rue.fill_rect(x, y, w, h)
+    
 
     # contour rectangle
-    rue.stroke_rect(x, y, w, h)
     rue.stroke_style = 'black'
+    rue.stroke_rect(x, y, w, h)
+    
     
     
     
