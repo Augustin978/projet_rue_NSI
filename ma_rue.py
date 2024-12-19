@@ -20,6 +20,6 @@ def affiche(rue) :
 
 
 # Test
-
-# Affichage du canvas rue pour un test
-affiche(rue)
+if __name__ == '__main__':
+    # Affichage du canvas rue pour un test
+    affiche(rue)
