@@ -11,7 +11,12 @@ def couleur_aleatoire():
     où rouge, vert et bleu sont des entiers
     compris entre 0 et 255 choisis aléatoirement.
     '''
+    rouge = randint(0,255)
+    vert = randint(0,255)
+    bleu = randint(0,255)
     
+    
+    return f'rgb({rouge},0,0)'
 
 
 # Tests
