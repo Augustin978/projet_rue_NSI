@@ -6,10 +6,10 @@ from ipycanvas import Canvas
 # Définition 
 
 # Création d'un canvas nommé rue de 800 pixels de large par 400 pixels de haut
-
+rue = Canvas(width = 800, height = 400)
 
 # Définition d'une fonction d'affichage
-rue = Canvas(width = 200, height = 160)
+
 def affiche(rue) :
     '''
     Efface et affiche le canvas dans le notebook

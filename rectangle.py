@@ -17,6 +17,7 @@ def rectangle(x,y,w,h,c):
         h : hauteur du rectangle
         c : couleur du remplissage
     '''
+    # rectangle
     rue.fill_style = c 
     rue.fill_rect(x, y, w, h)
     
