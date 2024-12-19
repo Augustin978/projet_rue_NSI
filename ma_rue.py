@@ -15,7 +15,7 @@ def affiche(rue) :
     Efface et affiche le canvas dans le notebook
     '''
     rue.clear()
-    rue
+    display(rue)
 
 
 
