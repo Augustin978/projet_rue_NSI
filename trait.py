@@ -10,7 +10,7 @@ def trait(x1,y1,x2,y2):
         x2, y2 : coordonnées de la fin du trait
     
     '''
-    
+    rue.stroke_line(x1, y1, x2, y2)
     
     
     
