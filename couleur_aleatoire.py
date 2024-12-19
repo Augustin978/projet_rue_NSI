@@ -16,7 +16,7 @@ def couleur_aleatoire():
     bleu = randint(0,255)
     
     
-    return f'rgb({rouge},0,0)'
+    return f'rgb({rouge,vert,bleu})'
 
 
 # Tests
