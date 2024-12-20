@@ -32,9 +32,10 @@ def rectangle(x,y,w,h,c):
     
     
 # Tests
-affiche(rue)
-rectangle(0, 50,200,100,'YellowGreen')
-rectangle(800, 450,200,100,'plum')
-rectangle(400, 250,200,100,'SkyBlue')
-rectangle(400, 250,100,50,'salmon')
+if __name__ == '__main__':
+    affiche(rue)
+    rectangle(0, 50,200,100,'YellowGreen')
+    rectangle(800, 450,200,100,'plum')
+    rectangle(400, 250,200,100,'SkyBlue')
+    rectangle(400, 250,100,50,'salmon')
 # Autres tests

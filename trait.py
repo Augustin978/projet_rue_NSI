@@ -15,5 +15,6 @@ def trait(x1,y1,x2,y2):
     
     
 # Tests
-affiche(rue)
-trait(50, 25, rue.width/2, rue.height/2)
+if __name__ == '__main__':
+    affiche(rue)
+    trait(50, 25, rue.width/2, rue.height/2)
