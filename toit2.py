@@ -15,7 +15,8 @@ def toit2(x, niveau):
     y = rue.height - niveau * 60 # ordonnée de la base du toit
    
     # trait horizontal
-    
+    trait(x,y,x+80,y)
+    trait(x,y,x-80,y)
     
     
     
@@ -24,4 +25,4 @@ def toit2(x, niveau):
 # Tests
 affiche(rue)
 for n in range(6) :
-    toit2(rue.width/2, n)
+    etage(rue.width/2,couleur,n)
