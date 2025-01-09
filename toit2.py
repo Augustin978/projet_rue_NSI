@@ -15,14 +15,10 @@ def toit2(x, niveau):
     y = rue.height - niveau * 60 # ordonnée de la base du toit
    
     # trait horizontal
-    trait(x,y,x+80,y)
-    trait(x,y,x-80,y)
+    trait(x,y,x+80,y,5,round)
+    trait(x,y,x-80,y,5,round)
     
     
     
     
     
-# Tests
-affiche(rue)
-for n in range(6) :
-    etage(rue.width/2,couleur,n)
