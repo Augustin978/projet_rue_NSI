@@ -15,8 +15,9 @@ def toit2(x, niveau):
     y = rue.height - niveau * 60 # ordonnée de la base du toit
    
     # trait horizontal
-    trait(x,y,x+80,y,5,round)
-    trait(x,y,x-80,y,5,round)
+    rue.line_cap = round
+    trait(x,y,x+80,y,5)
+    trait(x,y,x-80,y,5)
     
     
     

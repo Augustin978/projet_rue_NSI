@@ -7,7 +7,7 @@ from toit2 import toit2
 
 # Fonction toits()
 
-def toits(x, niveau):
+def toit(x, niveau):
     '''
     Dessine aléatoirement un toit plat ou un toit en pointe
     à l'ordonnée du niveau passé en paramètre
@@ -32,4 +32,4 @@ def toits(x, niveau):
 affiche(rue)
 for i in range(5) :
     for j in range(6) :
-        toits(0 + 200 * i, j)
+        toit(0 + 200 * i, j)
