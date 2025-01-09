@@ -15,11 +15,14 @@ def toit2(x, niveau):
     y = rue.height - niveau * 60 # ordonnée de la base du toit
    
     # trait horizontal
-    rue.line_cap = round
+    rue.line_cap = 'round'
     trait(x,y,x+80,y,5)
     trait(x,y,x-80,y,5)
     
     
-    
+# Tests
+affiche(rue)
+for n in range(6) :
+    toit2(rue.width/2, n)
     
     

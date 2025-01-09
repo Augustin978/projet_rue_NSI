@@ -19,9 +19,9 @@ def toit(x, niveau):
     y = rue.height - niveau * 60 # ordonnée de la base du toit
     oscar=randint(1,2)
     if oscar == 1 :
-        toit1(x,y)
+        toit1(x,niveau)
     if oscar == 2 :
-        toit2(x,y)
+        toit2(x,niveau)
 
     
         
