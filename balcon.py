@@ -17,12 +17,23 @@ def balcon(x,y):
         y est l'ordonnée du sol du niveau de la porte-fenetre
     '''
     # porte-fenetre
-    
-    
-    
+    rectangle(x,y,30,50,'Azure')
     # balcon
+    rue.line_width = 3
+    trait(x-22,y,x+22,y)#bas
+    trait(x-22,y-25,x+22,y-25)#haut
+    trait(x-21,y-25,x-21,y)#cote gauche
+    trait(x+21,y-25,x+21,y)#cote droit
+
+    espace = x
+    for i in range (7) : 
+        espace = espace + 6
+        trait(espace-21,y-25,espace-21,y)
 
 
+  
+
+rue.line_width=1
     # Tests
 affiche(rue)
 balcon(rue.width/2,rue.height)
