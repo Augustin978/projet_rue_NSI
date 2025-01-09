@@ -18,14 +18,15 @@ def portes(x,y):
         y est l'ordonnée du sol du niveau de la porte        
     '''     
 
-    augustin= randint(1,2)
+    augustin = randint(1,2)
 
     if augustin == 1 :
         rectangle(x,y,50,70,couleur_aleatoire())
     
     if augustin == 2 :
-        rectangle(x,y,50,50,couleur_aleatoire())
-        rue.fill_arc(x,y+50,25, 0, 180)
+        rectangle(x,y,50,70,couleur_aleatoire())
+        rue.fill_circle(x, y-50, 25)
+        rue.stroke_arc(x,y-50,25.5, -3.3,0.1)
 
     
     
@@ -40,4 +41,4 @@ def portes(x,y):
 affiche(rue)
 
 for i in range(21) :
-    portes(0 + i * 40,rue.height)
+    portes(20+ i * 40,rue.height)
