@@ -16,9 +16,10 @@ def toit2(x, niveau):
    
     # trait horizontal
     rue.line_cap = 'round'
-    trait(x,y,x+80,y,5)
-    trait(x,y,x-80,y,5)
-    
+    rue.line_witdh = 5
+    trait(x,y,x+80,y)
+    trait(x,y,x-80,y)
+    rue.line_witdh = 1
     
 # Tests
 affiche(rue)
