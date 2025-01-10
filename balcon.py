@@ -19,16 +19,15 @@ def balcon(x,y):
     # porte-fenetre
     rectangle(x,y,30,50,'Azure')
     # balcon
-    rue.line_width = 3
-    trait(x-22,y,x+22,y)#bas
-    trait(x-22,y-25,x+22,y-25)#haut
-    trait(x-21,y-25,x-21,y)#cote gauche
-    trait(x+21,y-25,x+21,y)#cote droit
+    trait(x-22,y,x+22,y,3)#bas
+    trait(x-22,y-25,x+22,y-25,3)#haut
+    trait(x-21,y-25,x-21,y,3)#cote gauche
+    trait(x+21,y-25,x+21,y,3)#cote droit
 
     espace = x
     for i in range (7) : #barre
         espace = espace + 6
-        trait(espace-21,y-25,espace-21,y)
+        trait(espace-21,y-25,espace-21,y,3)
 
 
   

@@ -2,7 +2,7 @@ from ma_rue import rue, affiche
 # Définitions
 
 # Fonction trait()
-def trait(x1,y1,x2,y2):
+def trait(x1,y1,x2,y2,w=1):
     '''
     dessine un trait entre les 2 points transmis en paramètres
     Paramètres
@@ -11,9 +11,9 @@ def trait(x1,y1,x2,y2):
     
     '''
     
-   
+    rue.line_width = w 
     rue.stroke_line(x1, y1, x2, y2)
-    
+    rue.line_width = 1 
     
     
 # Tests
