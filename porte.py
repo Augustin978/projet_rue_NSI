@@ -28,8 +28,8 @@ def portes(x,y):
     if augustin == 2 :
         rue.line_width = 2
         rectangle(x,y,50,70,couleur_aleatoire())
-        rue.fill_circle(x, y-50, 25)
-        rue.stroke_arc(x,y-50,25.5, -3.4,0.2)
+        rue.fill_circle(x, y-64, 25)
+        rue.stroke_arc(x,y-64,25.5, -3.4,0.2)
         rue.line_width = 1
 
     
@@ -43,6 +43,5 @@ def portes(x,y):
     
 # Tests
 affiche(rue)
-
-for i in range(21) :
-    portes(20+ i * 40,rue.height)
+portes(100,100)
+portes(200,200)

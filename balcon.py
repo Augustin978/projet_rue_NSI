@@ -26,7 +26,7 @@ def balcon(x,y):
     trait(x+21,y-25,x+21,y)#cote droit
 
     espace = x
-    for i in range (7) : 
+    for i in range (7) : #barre
         espace = espace + 6
         trait(espace-21,y-25,espace-21,y)
 
