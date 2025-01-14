@@ -28,22 +28,22 @@ def etage(x, couleur, niveau):
     # Murs
     
     
-    for i in range (2):
+    for i in range (3):
         ordre+=choice('bf')
 
     
     if ordre[0] == 'b':
-        balcon(x-12.5,y)
+        balcon(x-42.5,y)
     if ordre[0] == 'f':
-        fenetre(x-12.5,y-10)
+        fenetre(x-42.5,y-20)
     if ordre[1] == 'b':
         balcon(x,y)
     if ordre[1] == 'f' :
-        fenetre(x,y-10)
+        fenetre(x,y-20)
     if ordre[2] == 'b':
-        balcon(x+12.5,y)
+        balcon(x+42.5,y)
     if ordre[2] == 'f':
-        fenetre(x+12.5,y-10)
+        fenetre(x+42.5,y-20)
 
           
 
