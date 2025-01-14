@@ -4,7 +4,7 @@ from facade import facade
 from fenetre import fenetre
 from balcon import balcon 
 
-from random import randint
+from random import randint ,choice
 
 
 # Définitions
@@ -24,14 +24,32 @@ def etage(x, couleur, niveau):
     '''
     y = rue.height - niveau * 60 # ordonnée de la base de l'etage
     facade(x,couleur, niveau)
-    fenetre(x,y)
-    balcon(x,y)
+    ordre = ''
     # Murs
     
-        
+    
+    for i in range (2):
+        ordre+=choice('bf')
+
+    
+    if ordre[0] == 'b':
+        balcon(x-12.5,y)
+    if ordre[0] == 'f':
+        fenetre(x-12.5,y-10)
+    if ordre[1] == 'b':
+        balcon(x,y)
+    if ordre[1] == 'f' :
+        fenetre(x,y-10)
+    if ordre[2] == 'b':
+        balcon(x+12.5,y)
+    if ordre[2] == 'f':
+        fenetre(x+12.5,y-10)
+
+          
+
     
     # Eléments
-    
+
 
 
     # Tests
