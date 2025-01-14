@@ -11,10 +11,8 @@ from random import randint
 
 # Fonction etage()
 def etage(x, couleur, niveau):
-    affiche(rue)
-couleur = couleur_aleatoire()
-for n in range(6) :
-    facade(rue.width/2, couleur, n)
+    
+
     '''
     Dessine sur une facade un étage avec 3 éléments choisis aléatoirement
     parmi une fenêtre ou une porte fenêtre avec balcon.  
@@ -25,7 +23,9 @@ for n in range(6) :
         niveau : numéro de l'étage en partant de 0 pour le rdc
     '''
     y = rue.height - niveau * 60 # ordonnée de la base de l'etage
-    
+    facade(x,couleur, niveau)
+    fenetre(x,y)
+    balcon(x,y)
     # Murs
     
         
