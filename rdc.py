@@ -15,18 +15,25 @@ def rdc(x, couleur):
         x : abscisse du milieu de la base du RDC
         couleur : couleur fixée par l'immeuble
     '''
+def rdc(x, couleur):
+    '''
+    Dessine le rdc sur une facade au niveau do sol de la rue
+    avec une seule porte et 2 fenêtres placées aléatoirement.
+    Paramètres
+        x : abscisse du milieu de la base du RDC
+        couleur : couleur fixée par l'immeuble
+    '''
     # Dessine la facade
-    facade()
     facade(x,couleur,0)
     # Choix d'une distribution
     ordres = ''
-    randint(1,3)
+    choix=randint(1,3)
 
-    if randint == 1 :
+    if choix == 1 :
         ordres = 'pff'
-    if randint == 2 :
+    if choix == 2 :
         ordres = 'fpf'
-    if randint == 3 :
+    if choix == 3 :
         ordres = 'ffp'
     
     if ordres[0] == 'p':
@@ -41,7 +48,6 @@ def rdc(x, couleur):
         portes(x+42.5,rue.height)
     if ordres[2] == 'f':
         fenetre(x+42.5,rue.height-20)
-
     
     
     

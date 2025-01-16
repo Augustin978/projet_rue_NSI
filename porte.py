@@ -21,15 +21,15 @@ def portes(x,y):
     augustin = randint(1,2)
 
     if augustin == 1 :
-        rue.line_width = 2
-        rectangle(x,y,50,35,couleur_aleatoire())
+        rue.line_width =1
+        rectangle(x,y,30,50,couleur_aleatoire())
         rue.line_width = 1
     
     if augustin == 2 :
-        rue.line_width = 2
-        rectangle(x,y,50,70,couleur_aleatoire())
-        rue.fill_circle(x, y-64, 25)
-        rue.stroke_arc(x,y-64,25.5, -3.4,0.2)
+        rue.line_width = 1
+        rectangle(x,y,30,35,couleur_aleatoire())
+        rue.fill_circle(x, y-35, 15)
+        rue.stroke_arc(x,y-35,15.5, -3.4,0.2)
         rue.line_width = 1
 
     
