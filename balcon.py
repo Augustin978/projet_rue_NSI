@@ -33,6 +33,8 @@ def balcon(x,y):
   
 
 rue.line_width=1
+
     # Tests
-affiche(rue)
-balcon(rue.width/2,rue.height)
+if __name__ == '__main__':
+    affiche(rue)
+    balcon(rue.width/2,rue.height)

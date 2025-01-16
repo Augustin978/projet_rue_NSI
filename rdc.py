@@ -60,6 +60,7 @@ def rdc(x, couleur):
     
 # Tests
 from couleur_aleatoire import couleur_aleatoire
-affiche(rue)
-for i in range(7) :
-    rdc(i*160,couleur_aleatoire())
+if __name__ == '__main__':
+    affiche(rue)
+    for i in range(7) :
+        rdc(i*160,couleur_aleatoire())

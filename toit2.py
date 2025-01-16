@@ -20,8 +20,9 @@ def toit2(x, niveau):
     trait(x,y,x-80,y,10)
     
 # Tests
-affiche(rue)
-for n in range(6) :
-    toit2(rue.width/2, n)
+if __name__ == '__main__':
+    affiche(rue)
+    for n in range(6) :
+        toit2(rue.width/2, n)
     
     

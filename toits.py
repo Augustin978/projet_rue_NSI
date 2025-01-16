@@ -29,7 +29,8 @@ def toit(x, niveau):
     
     
 # Tests
-affiche(rue)
-for i in range(5) :
-    for j in range(6) :
-        toit(0 + 200 * i, j)
+if __name__ == '__main__':
+    affiche(rue)
+    for i in range(5) :
+        for j in range(6) :
+            toit(0 + 200 * i, j)

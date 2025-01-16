@@ -16,5 +16,6 @@ def sol():
     trait(20,y_sol,780,y_sol,3)
 
     # Tests
-affiche(rue)
-sol()
+if __name__ == '__main__':
+    affiche(rue)
+    sol()
