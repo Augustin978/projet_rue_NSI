@@ -18,5 +18,6 @@ def fenetre(x,y):
     rectangle(x,y,30,30,'Azure')
     
 # Tests
-affiche(rue)
-fenetre(rue.width/2,rue.height)   
+if __name__ == '__main__':
+    affiche(rue)
+    fenetre(rue.width/2,rue.height)   

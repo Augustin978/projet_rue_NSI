@@ -16,7 +16,8 @@ def rdc(x, couleur):
         couleur : couleur fixée par l'immeuble
     '''
     # Dessine la facade
-    facade(x,rue.height,couleur)
+    facade()
+    facade(x,couleur,0)
     # Choix d'une distribution
     ordres = ''
     randint(1,3)
@@ -29,17 +30,17 @@ def rdc(x, couleur):
         ordres = 'ffp'
     
     if ordres[0] == 'p':
-        portes(x-42.5,100)
+        portes(x-42.5,rue.height)
     if ordres[0] == 'f':
-        fenetre(x-42.5,100-20)
+        fenetre(x-42.5,rue.height-20)
     if ordres[1] == 'p':
-        portes(x,100)
+        portes(x,rue.height)
     if ordres[1] == 'f' :
-        fenetre(x,100-20)
+        fenetre(x,rue.height-20)
     if ordres[2] == 'p':
-        portes(x+42.5,100)
+        portes(x+42.5,rue.height)
     if ordres[2] == 'f':
-        fenetre(x+42.5,100-20)
+        fenetre(x+42.5,rue.height-20)
 
     
     

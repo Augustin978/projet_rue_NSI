@@ -22,7 +22,7 @@ def portes(x,y):
 
     if augustin == 1 :
         rue.line_width = 2
-        rectangle(x,y,25,35,couleur_aleatoire())
+        rectangle(x,y,50,35,couleur_aleatoire())
         rue.line_width = 1
     
     if augustin == 2 :
@@ -42,6 +42,7 @@ def portes(x,y):
     
     
 # Tests
-affiche(rue)
-portes(100,100)
-portes(200,200)
+if __name__ == '__main__':
+    affiche(rue)
+    portes(100,100)
+    portes(200,200)
