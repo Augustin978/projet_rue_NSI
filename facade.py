@@ -4,7 +4,7 @@ from rectangle import rectangle
 
 
 # Fonction
-def facade(x, couleur, niveau):
+def facade(x,couleur,niveau):
     '''
     Dessine un rectangle de 60 pixels de haut et 140 pixels de large
     Paramètres :
@@ -13,7 +13,7 @@ def facade(x, couleur, niveau):
         niveau : numéro du niveau (0 pour les rdc, ...)
     '''
     y = rue.height - niveau * 60 # ordonnée de la base de la facade
-    rectangle(x,y,140,60 ,couleur)
+    rectangle(x,y,140,60,couleur)
     
     
 # Tests

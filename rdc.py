@@ -18,8 +18,29 @@ def rdc(x, couleur):
     # Dessine la facade
     facade(x,rue.height,couleur)
     # Choix d'une distribution
+    ordres = ''
+    randint(1,3)
+
+    if randint == 1 :
+        ordres = 'pff'
+    if randint == 2 :
+        ordres = 'fpf'
+    if randint == 3 :
+        ordres = 'ffp'
     
-    
+    if ordres[0] == 'p':
+        portes(x-42.5,100)
+    if ordres[0] == 'f':
+        fenetre(x-42.5,100-20)
+    if ordres[1] == 'p':
+        portes(x,100)
+    if ordres[1] == 'f' :
+        fenetre(x,100-20)
+    if ordres[2] == 'p':
+        portes(x+42.5,100)
+    if ordres[2] == 'f':
+        fenetre(x+42.5,100-20)
+
     
     
     
@@ -34,4 +55,4 @@ def rdc(x, couleur):
 from couleur_aleatoire import couleur_aleatoire
 affiche(rue)
 for i in range(7) :
-    rdc(i*160, couleur_aleatoire())
+    rdc(i*160,couleur_aleatoire())
