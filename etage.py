@@ -46,8 +46,6 @@ def etage(x, couleur, niveau):
         fenetre(x+42.5,y-20)
 
           
-
-    
     # Eléments
 
 

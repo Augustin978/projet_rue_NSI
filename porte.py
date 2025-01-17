@@ -10,7 +10,7 @@ from random import randint
 # Fonction portes()
 def portes(x,y):
     '''
-    Dessine une porte de 50 pixels en largeur et 70 pixels en hauteur
+    Dessine une porte de 30 pixels en largeur et 50 pixels en hauteur
     La forme du haut de la porte est aléatoirement rectangulaire ou arrondi
     La couleur pleine de remplissage est choisi aléatoirement parmi les couleurs HTML valides
     Paramètres :
